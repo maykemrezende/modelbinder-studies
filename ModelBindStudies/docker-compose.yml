@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  modelbindstudies:
+    image: ${DOCKER_REGISTRY-}modelbindstudies
+    build:
+      context: .
+      dockerfile: ModelBindStudies/Dockerfile
